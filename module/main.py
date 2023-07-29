@@ -1,6 +1,10 @@
-import json, time, sys, argparse
+import json
+import time
+import sys
+import argparse
 from loading import LoadingThread
-from googletranslet import Translator
+from googletrans import Translator
+
 
 def translate_json_value(value, translator):
     # Menerjemahkan nilai JSON
@@ -22,6 +26,7 @@ def translate_json_value(value, translator):
     else:
         return value
 
+
 def translate_json_file(file_path):
     # Membaca data JSON dari file
     with open(file_path, 'r') as file:
@@ -40,7 +45,7 @@ def translate_json_file(file_path):
         # Menampilkan loading persentase
         percentage = (i + 1) / total_keys * 100
         loading.update_progress(percentage/100)
-        
+
         time.sleep(0.5)  # Jeda 0.5 detik untuk simulasi
 
     # Menyimpan hasil terjemahan ke file yang sama
@@ -50,13 +55,16 @@ def translate_json_file(file_path):
     print()
     print("[*] Translation completed and saved to file.")
 
+
 if __name__ == "__main__":
     # Create an ArgumentParser object
-    parser = argparse.ArgumentParser(description="Translate JSON file using Google Translate", usage="jsontrans [file_path] [json_lang_dest]")
+    parser = argparse.ArgumentParser(
+        description="Translate JSON file using Google Translate", usage="jsontrans [file_path] [json_lang_dest]")
 
     # Add arguments to the parser
     parser.add_argument("file_path", nargs="?", help="Path to the JSON file")
-    parser.add_argument("json_lang_dest", nargs="?", help="Language ID to which the JSON should be translated")
+    parser.add_argument("json_lang_dest", nargs="?",
+                        help="Language ID to which the JSON should be translated")
 
     # Parse the arguments
     args = parser.parse_args()
