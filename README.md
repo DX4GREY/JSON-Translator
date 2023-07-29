@@ -1,5 +1,5 @@
 # FaAng - DDoS Tools
-<img src="https://img.shields.io/badge/Python-3.11-red"></img> <img src="https://img.shields.io/badge/FaAng-BETA-blue"></img> <img src="https://img.shields.io/badge/Kali Linux-2023.1-green"></img> <img src="https://img.shields.io/badge/Ubuntu-20.04-yellow"></img><br>
+<img src="https://img.shields.io/badge/Python-3.11-red"></img> <img src="https://img.shields.io/badge/JSON Translator-BETA-blue"></img> <img src="https://img.shields.io/badge/Kali Linux-2023.1-green"></img> <img src="https://img.shields.io/badge/Ubuntu-20.04-yellow"></img><br>
 
 <h2>List In Script</h2>
 <b>[1]</b> UDP       layer4 => UDP Attack<br>
@@ -21,7 +21,7 @@ Installation support for Kali Linux, Ubuntu And Termux
 
 Just enter this command
 ```bash
-curl -s https://raw.githubusercontent.com/DX4GREY/FaAng-Toolkit/main/install.sh | bash -s
+curl -s https://raw.githubusercontent.com/DX4GREY/JSON-Translator/main/install.sh | bash -s
 ```
 
 How to uninstall
@@ -48,7 +48,7 @@ pkg install python
 
 and if done, install again this script
 ```bash
-curl -s https://raw.githubusercontent.com/DX4GREY/FaAng-Toolkit/main/install.sh | bash -s
+curl -s https://raw.githubusercontent.com/DX4GREY/JSON-Translator/main/install.sh | bash -s
 ```
 
 # WARNING
